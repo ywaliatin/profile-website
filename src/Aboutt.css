@@ -1,0 +1,223 @@
+/* Styles for the About section */
+
+body {
+    color: #333;
+}
+
+.about-section {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-content {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.about-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 290px;
+}
+
+h3 {
+    color: white;
+}
+
+table {
+    color: white;
+    margin: 0 auto;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+.projectimage {
+    max-width: 100%;
+}
+
+/* Add these styles to your CSS file */
+
+.project-image-cell {
+    width: 20%;
+    vertical-align: top;
+    padding-right: 20px;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-details h4 {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.project-details p {
+    font-size: 14px;
+    margin-top: 0;
+    text-align: left;
+}
+
+/* Style the LinkedIn and email images */
+.contact-links img {
+    max-width: 30px !important;
+    margin-right: 10px;
+    border-radius: 0;
+}
+
+.download-cv-container {
+    text-align: center; /* Center the "Download my CV" link */
+    margin-bottom: 20px; /* Add margin below the link */
+    border-bottom: 1px solid #333; /* Add a line under the link */
+    padding-bottom: 20px; /* Add padding below the line */
+  }
+
+.download-cv {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.download-cv:hover {
+    background-color: #0056b3;
+}
+
+.falling-ball {
+    width: 5px;
+    height: 5px;
+    background-color:yellowgreen; /* Color of the balls */
+    border-radius: 50%;
+    position: absolute;
+    animation: fall 16s linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh); /* Falling to the bottom of the viewport */
+    }
+  }
+
+  .falling-ball2 {
+    width: 5px;
+    height: 5px;
+    background-color:aqua; /* Color of the balls */
+    border-radius: 50%;
+    position: absolute;
+    animation: fall 10s linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh); /* Falling to the bottom of the viewport */
+    }
+  }
+
+  .falling-ball3 {
+    width: 5px;
+    height: 5px;
+    background-color:whitesmoke; /* Color of the balls */
+    border-radius: 50%;
+    position: absolute;
+    animation: fall 8s linear infinite;
+  }
+  
+  @keyframes fall3 {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh); /* Falling to the bottom of the viewport */
+    }
+  }
+  
+
+/* Media query for larger screens or desktops */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .about-content {
+        font-size: 18px;
+    }
+
+    .contact-links {
+        margin-left: 460px;
+    }
+
+    table {
+        font-size: 16px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        text-align: center;
+    }
+
+    .project-image-cell {
+        text-align: center;
+        width: 30%; /* Adjust as needed for small screens */
+        padding-right: 0;
+    }
+
+    .contact-links {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    table {
+        margin-left: 0;
+    }
+
+    .project-image {
+        max-width: 60%;
+        height: auto;
+    }
+}
