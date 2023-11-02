@@ -1,0 +1,91 @@
+/* About.css */
+
+/* Common styles for all screen sizes */
+#About {
+    position: absolute;
+    text-align: left;
+    top: 50%; /* Adjust the vertical position */
+    left: 50%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%); /* Center the content within the header */
+    margin-top: -300px; /* Adjust for vertical alignment */
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center; /* Center vertically */
+  }
+  
+  .profile-image img {
+    max-width: 100px; /* Adjust the image size as needed */
+    border-radius: 50%; /* Make the image round */
+  }
+  
+  .profile-text p {
+    margin-left: 20px; /* Add spacing between the image and text */
+    font-size: 18px; /* Adjust the font size as needed */
+  }
+  /* Style the contact links container */
+.contact-links {
+  display: flex; /* Display the images in a horizontal row */
+  align-items: center; /* Center vertically within the container */
+  margin-top: 10px; /* Add spacing between the job role and the contact links */
+}
+
+/* Style the LinkedIn and email images */
+.contact-links img {
+  max-width: 30px !important; /* Adjust the size as needed */
+  margin-right: 10px; /* Add spacing between the images */
+  border-radius: 0;
+}
+
+  
+  /* Style the job role and title */
+  .job-role {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .short-line {
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    margin: 10px auto;
+  }
+  
+  .job-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    #About {
+      margin-top: -60px; /* Remove negative margin for small screens */
+    }
+  
+    /* Adjust the size of the profile photo for small screens */
+    .profile img {
+      max-width: 80px; /* Reduce the size for smaller screens */
+      margin-top: 10px; /* Adjust the top margin */
+    }
+  
+    /* Adjust the font size of the job role for small screens */
+    .job-role {
+      font-size: 12px; /* Reduce the font size for smaller screens */
+      margin-top: 8px; /* Adjust the top margin */
+    }
+  
+    /* Adjust the size of the short line for small screens */
+    .short-line {
+      width: 40px; /* Reduce the width for smaller screens */
+      margin-top: 8px; /* Adjust the top margin */
+    }
+  
+    /* Adjust the font size of the job title for small screens */
+    .job-title {
+      font-size: 16px; /* Reduce the font size for smaller screens */
+      margin-top: 8px; /* Adjust the top margin */
+    }
+  }
+  
